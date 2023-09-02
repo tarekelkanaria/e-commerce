@@ -1,0 +1,347 @@
+{
+  "products": [
+    {
+      "name": "Reinforced",
+      "category": "glass",
+      "price": 33.78,
+      "currency": "USD",
+      "image": {
+        "src": "https://s3-alpha-sig.figma.com/img/dfc4/b1dc/08637eb2ab4ac3cee519f86e450f713d?Expires=1694390400&Signature=pOdu-Y33MNi7IQ-hDY~qfGlkLbK6wbnOq2NIIEp79gKGKjtBbfrA78B1~DuIhquxHmVd8BR16aQu0NX402Z5W~QvePKT05cZj0~G0hRREEs7oy8mJUe6ZCkRkJEfUZUwhtcKHJ6CYHCnFdplHiTj3nVS6MzEkqeXDpxIxFMXY3NZpy5MZSvSmWiNlfY2yX1Nj0cI8NgqIM7WuiMq5qCca~-WtOe3xLjhRazJUj48rHj0I~xg8le-JHKwJz2jjxRe-MM0SAMBc1Gi0B7P~DgkiTFfpDl4XKHkWjO0GHk9a9eFy-WdKPJurnM20oWamPmMsUepo2Wp2KjIW2R8tqhWzg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "alt": "Reinforced image"
+      },
+      "bestseller": true,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Shape",
+      "category": "steel",
+      "price": 93.89,
+      "currency": "USD",
+      "image": {
+        "src": "https://s3-alpha-sig.figma.com/img/3aa9/00c3/5a0394eae4e005329c210e14112e8d4d?Expires=1694390400&Signature=jFk6KvcQ0rLnJVh7ab~QtfznTuK2JnGkOCX-hGqB1SAXel9qhjwmtFHkLksSsM38Hv731nqdm0ygHlQnu-Sq03iGtvZo0q0SasglGmtY27QfBwrJYq1TUD~5bXTrss~M~ZkAwOkQFFT5sr6d56~4QePOiFcfy79V6XYhctnPC5qnC7qDaO74Gz4uHuQueoLhkNSnNVm1Dy~Q0zEzZBv1lsmJ9qrOs5rVvH3lAyYI6CiWm3w00K4ve4PzoaIrfJeQG8zSregdq-8BVjNnflbNPkt2yHRI~qJLt7f5sJ27HH9S1ZuaY782q5C9ponH-1vx3EAS0aB~Q01UddKnARTMTQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "alt": "Shape image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Wave",
+      "category": "steel",
+      "price": 120.21,
+      "currency": "USD",
+      "image": {
+        "src": "https://s3-alpha-sig.figma.com/img/fda7/8786/630da7797fa588cc5abca1b79b7e772a?Expires=1694390400&Signature=qjd4F3H0ZV8dpQfLeIoii41ASc0v4EKRT2ZPqB7D66G~EnIfzVkm-dPa347zGKT7HBzkFV0LTDXqUUaSTJ5YdLuUoF5LqK8znDqeMAT96VjdnERGOw2EsqqGhvzaZxAXMv1e6KRjKEnoyJ2HE30VAcV8oMinqbxs~obcgrXi~E08swoQZgSb-T2R~3x7k0IW9I~DSsEn5Lypoavfnm3QbRjX90JuV0MH8DG504g0G9L4JKNh-7ADbTtfcAy5fxdp9LBuixSjAs5hv9GpVefJlt5fXwD6AKmRqhySal1kDRK11R~DXKN5z4OJTtfKJUStK11oUviidOJIB00fZbJ7vg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "alt": "Wave image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Colored",
+      "category": "glass",
+      "price": 100,
+      "currency": "USD",
+      "image": {
+        "src": "https://s3-alpha-sig.figma.com/img/6781/d0a9/d2436b39562e7a06c354314e0954a739?Expires=1694390400&Signature=WFxWLDCssAF9sqrquXwr~pH6euPIPN4wzskrGH~wg03QMrjs5GgELeynFZXyNvqJbR3qz-BNVDVf-RdE2UJCXVQNksrF2D7LY0Ev4tgblhTOxrs6Bps3Zlx1dHJD06YIWEXPtnc3JHAaWwIrQQhvT36YqrrlnNiSY~JwBeLDmSjyh-OutNilQUX7i3M6B~P9e0fYx9sAOp0kmz-u8wWHraTepf2ByI4U7wQYI7Gz2mMCXt0ZkQNYzHlwQL0kypRcauW-bnYxlI48nf027-YXsJCsJRKKBa5kHeY7kcVam-6iG1R~KDk7zwkWEjI1tSPvL9D6CjCXFg0baalEI8U12w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "alt": "Colored image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Recycled Plastic",
+      "category": "plastic",
+      "price": 101,
+      "currency": "USD",
+      "image": {
+        "src": "https://s3-alpha-sig.figma.com/img/f80d/8afc/00b142a6b4c5acdae33b76b0b5b7468e?Expires=1694390400&Signature=S9OE9qgA37TfmUE22l7P4~jtE~o9J3DKmEqh0YzAsdNB5aDOEVea5rNi4Rsr-vMLHakXwI9UiEneQuMUjR9SivZcDy2J~Nd7c6WEyTPieQKWoqXbT~I8qRdMsBaKFVR4u6tNbZ~54rg4-6lWysUU3UdiPKza7ZAxpwJFk9pYW6jrDq0xKW~4Pw6X6xBnjHueeUeGjWsPn8-DRT5-MjrHNAqLBBnlGDGGcxngWfb-bnOKZof9lQv6nWchW1OtUYjIT8UGiNHDRFTNm0hvh2RIOVFMpo4xC9xXIiFmW5SDD8NkrMGdW8L4Wu~VJ9T52Q50OHn3XKBVZA~lAv2A5MKNvA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "alt": "Recycled plastic image"
+      },
+      "bestseller": false,
+      "featured": true,
+      "details": {
+        "weight": 2340,
+        "thickness": 2,
+        "description": "Plastic recycling is the reprocessing of plastic waste into new and useful products. When performed correctly, this can reduce dependence on landfill, conserve resources and protect the environment from plastic pollution and greenhouse gas emissions. Although recycling rates are increasing, they lag behind those of other recoverable materials, such as aluminium, glass and paper. The global recycling rate in 2015 was 19.5%, while 25.5% was incinerated and the remaining 55% disposed of to landfill. Since the beginning of plastic production in the 20th century, until 2015, the world has produced some 6.3 billion tonnes of plastic waste, only 9% of which has been recycled, and only ~1% has been recycled more than once.[6]",
+        "recommendations": [
+          {
+            "src": "https://s3-alpha-sig.figma.com/img/7e0e/443a/dbdb5707b25998cbba534cc6f73304a0?Expires=1694390400&Signature=G9KiIQhTDRTFGh5Et1TXa5CAAeV7gkTHh95uz26hINURMiGLJt5dBHYMElbZpBI8N9FrMbTwSPELYxqWHeq5clG9T-qo9lQHCsRh1FmBJMBL1vmWzkdBkzmYk1coNCCW3JWaeGWDxouvRRlW3HbqwPm6lujEdlRBjECFZuiRAyMO4qCyUT7e1sv3~oGm-rmMof2lQ1SHomRexf9PyvzkIme2CIHCx3oeDeaSJHm0oKRrrgdRUV0jIOZpJwHas-3pSXghHlNzi6M1iXnX3B85Cy0rkzR9xU3~RgEsk0Nx17doZsQDBy66SXOVPf367Th0m4rkGyeKXrwZPzNvXzpJtg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+            "alt": "Glass image"
+          },
+          {
+            "src": "https://s3-alpha-sig.figma.com/img/2b7c/87db/b5f573894bdf3f37c91338211f6cd089?Expires=1694390400&Signature=IjZayQNI8BH7b0SIHMdgg8bALexqiYeKgi6nBJOzO-pcDYmzyz7rU0Y-TJ0fl3J87y8-w2H~hYKtEtD5w3wL2H25itv7sOBi~qiSUnexF~G2G72dAVXFEVkbIeYQzGyr0EoLysp1U5jgCj9RtLbsyk6FczKkcZIQZnjKAfjtFhF3vVJknWclhmLRSNtyZLtc1UuFwS6dHU9t08VYvQvw8gU1Bnfgd3SQRkV85ItX2eB1GcE-L91439MWhyXJAbAgKlDI-xIXkOB6xemDcs0crm-vOAeME1w5khaRv-oG6nVX8Vo9IlW-FsVaoKGguod-mDP1VXFQdUM4bHJBq0-Acg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+            "alt": "Wood image"
+          },
+          {
+            "src": "https://s3-alpha-sig.figma.com/img/e9d9/eba7/289246cf939fbc5d8f02ed19ab6389d9?Expires=1694390400&Signature=OcyjtMP~FCc9nC7hfWbaAmEhv2Uqn8lIlRJBL2-Buse27SSe9aXgcHrzxAInuxv4nI4etk7XOtFLzgcm5wTZzoEg1U2MwAt8cb4TTlpLpI4fUyG3uMUQWFj~15RQPrKKZi3eKKvkYCYDL0kSsXOYbnv-YuoNoT08HoDFqyKvymByxK3BWZ4I~2XTMLQh3JAsE6~TN~v4KMjEgdlNzhqjveZd6eNkN23GKJd-prP-fq7R0v49TiwCDBKZ3Z3eBg6Eqv-CE5Ego7MnX-N-OgB1RUluPD-pjBeqeZzBRDnbDrQCAQypW8J1Fy9aQRO~iXiX4vF9PIWAlS3Yly5xfNeeNg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+            "alt": "Building bricks"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Red",
+      "category": "brick",
+      "price": 101,
+      "currency": "USD",
+      "image": {
+        "src": "https://s3-alpha-sig.figma.com/img/1d20/b2bc/4e754d7c2bbc4d5a871ba1b2fb334d30?Expires=1694390400&Signature=Kdr925qt7-DopKIza9JKuEWJWoKzwoiluTrJ~UDC3Y1ykbAFaA3QK-lsTeIM1PvXJ2l8YS9DX-9vbiKFUf9bgEPxZnN31IXezdmg8Ku0DEUG888z1PfeYPMEsYjLc2TTmKT0-3BKL1dO5KAkAICPRU-ywkrPhg-mBO1EvRv9n07GYJiE51JgOBem8oAkJCsEyR-V9cL5qX4MaK74iKGbFJ-lbM2yK0d-r0C8LvG--pSYLzyt2uU-yVS7EZDl5ZXosBEXLxPK4DK2samPpqsxycQn3gevJwFVAjyD0uXJ9Ixc4ofgoPsFDh3iZU7pMqLpS2xdRPO1wVeNpFItkJTbRA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "alt": "Red image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Pastel",
+      "category": "brick",
+      "price": 101,
+      "currency": "USD",
+      "image": {
+        "src": "https://s3-alpha-sig.figma.com/img/f954/cd7a/50071fa94a868724afdf1b2ccdb8f3f3?Expires=1694390400&Signature=bpjSwJ13d1FRsKc8QGlSu3mDGCU9~25Qo0c7XPoXemw~WKwOLrggQRTcVZpH0Et3kc1cdDSunAuOm4E~XF2iXZxFotV5i-vUugl827awLIbnBcVleCp~AhY4NZObel8X3GyAQG4Y0yN3Im3euqv6~bxgZRh-5xkKYzPvVriFQcdNgSwspl-Cx6AmiqD1-Y0D~a3ZX40h3oLhUFiKtDq0j~SRT9M91wpmZdSNMCQ5bA1SbAghfnpe0pf0rNLuFd3gqLxU4diEhmwAoL4cKn0zy5Xqw~TeM7VjTGcgOLMnFcbs47sqg4p5WoUB1rx2aQWkj8WVCLjHBHR0kZchXVR-ag__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+        "alt": "Pastel image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Japan pattern",
+      "category": "wood",
+      "price": 68,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1525947088131-b701cd0f6dc3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Japan pattern image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Table top",
+      "category": "wood",
+      "price": 130.6,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1546484396-fb3fc6f95f98?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Table top image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Floor",
+      "category": "wood",
+      "price": 210,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1541138858526-9f296df15693?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2071&q=80",
+        "alt": "Floor image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Infinite points",
+      "category": "concrete",
+      "price": 18,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1603348708701-9ef0c4f773da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Infinite points image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Decor",
+      "category": "concrete",
+      "price": 85.2,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1541140134513-85a161dc4a00?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Decor image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Concrete wall",
+      "category": "concrete",
+      "price": 300,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1579492450119-80542d516179?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Concrete wall image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Digital",
+      "category": "carbon fiber",
+      "price": 16,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1496096265110-f83ad7f96608?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Digital image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Square pattern",
+      "category": "carbon fiber",
+      "price": 176.26,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1618186665027-73ab4abb093e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1972&q=80",
+        "alt": "Square pattern image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Diamond pattern",
+      "category": "carbon fiber",
+      "price": 12.4,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1618186665680-6823c7e2a898?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1972&q=80",
+        "alt": "Diamond pattern image"
+      },
+      "bestseller": true,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Geometry",
+      "category": "copper",
+      "price": 220.6,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1548357204-82fc6c4a0c67?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
+        "alt": "Geometry image"
+      },
+      "bestseller": true,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Brown",
+      "category": "copper",
+      "price": 35,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1589874497556-65019ae69438?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Brown image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Architecture",
+      "category": "copper",
+      "price": 15.5,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1495321308589-43affb814eee?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Architecture image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Window",
+      "category": "glass",
+      "price": 475,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1525570665650-76bb26af503d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Window image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Shape pattern",
+      "category": "steel",
+      "price": 18.5,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1511406294398-718e9b6f85bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Shape pattern image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Gray",
+      "category": "brick",
+      "price": 79,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1604147495798-57beb5d6af73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Gray wall bricks image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Old",
+      "category": "brick",
+      "price": 13,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1592795694703-24f1814cfb0a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Old wall bricks image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Vase",
+      "category": "glass",
+      "price": 85.5,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1505941625782-5f8710bdd9f3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2047&q=80",
+        "alt": "Vase with flowers image"
+      },
+      "bestseller": true,
+      "featured": false,
+      "details": null
+    },
+    {
+      "name": "Light wall",
+      "category": "wood",
+      "price": 375.5,
+      "currency": "USD",
+      "image": {
+        "src": "https://images.unsplash.com/photo-1531824475211-72594993ce2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+        "alt": "Light wall of wood image"
+      },
+      "bestseller": false,
+      "featured": false,
+      "details": null
+    }
+  ]
+}
