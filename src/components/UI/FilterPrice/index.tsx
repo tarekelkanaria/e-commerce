@@ -1,19 +1,23 @@
 "use client";
 
-import { filterByPrice } from "@/redux/features/productsSlice";
-import { useAppDispatch } from "@/redux/typed-hooks";
+import {
+  filterByPrice,
+  setSelectedPrice,
+} from "@/redux/features/productsSlice";
+import { useAppDispatch, useAppSelector } from "@/redux/typed-hooks";
 import type { PriceInput } from "@/types";
-import { useId, useState } from "react";
+import { useId } from "react";
 
 const FilterPrice = ({ label, breakPoint }: PriceInput) => {
   const priceId = useId();
-  const [price, setPrice] = useState<number | null>(null);
+  const selectedPrice = useAppSelector((state) => state.products.selectedPrice);
   const dispatch = useAppDispatch();
 
   const handleSelect = (e: React.ChangeEvent<HTMLInputElement>) => {
-    setPrice(+e.target.value);
-    dispatch(filterByPrice(+e.target.value));
+    dispatch(setSelectedPrice(+e.target.value));
+    dispatch(filterByPrice());
   };
+
   return (
     <>
       <input
@@ -21,7 +25,7 @@ const FilterPrice = ({ label, breakPoint }: PriceInput) => {
         id={priceId}
         name="price"
         value={breakPoint}
-        checked={price === breakPoint}
+        checked={selectedPrice === breakPoint}
         onChange={handleSelect}
         className="focus:ring-0 cursor-pointer"
       />

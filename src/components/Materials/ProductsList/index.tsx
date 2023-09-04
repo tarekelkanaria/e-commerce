@@ -7,7 +7,9 @@ const productsPerDesktop = 6;
 const productsPerMobile = 4;
 
 export default function ProductsList() {
-  const allProducts = useAppSelector((state) => state.products.allProducts);
+  const allProducts = useAppSelector(
+    (state) => state.products.renderedProducts
+  );
   const currentPage = useAppSelector((state) => state.paginate.currentPage);
 
   const lastProductDesktopIdx = currentPage * productsPerDesktop;

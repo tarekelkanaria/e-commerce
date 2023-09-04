@@ -30,10 +30,22 @@ export interface RenderedProduct extends Product {
   id: string;
 }
 
+export type PriceInput = {
+  label: string;
+  breakPoint: number;
+};
+
+export type CategoryInput = {
+  label: string;
+  hasChecked: boolean;
+};
+
 export type InitialProductsState = {
-  allProducts: RenderedProduct[];
+  renderedProducts: RenderedProduct[];
   featuredProduct: Product;
-  selectedCategories: string[];
+  categories: CategoryInput[];
+  prices: PriceInput[];
+  selectedPrice: number | null;
 };
 
 export type InitialPaginateState = {
@@ -70,18 +82,4 @@ export type ProvidersProps = {
 export type FilterProps = {
   smallScreen?: boolean;
   close?: () => void;
-};
-
-export type CategoryInput = {
-  label: string;
-  hasChecked: boolean;
-};
-
-export type FilteredMaterialsProps = {
-  updateFilter: (text: string) => void;
-} & CategoryInput;
-
-export type PriceInput = {
-  label: string;
-  breakPoint: number;
 };

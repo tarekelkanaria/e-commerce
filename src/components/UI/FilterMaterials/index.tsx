@@ -1,29 +1,20 @@
 "use client";
 
-import { useAppDispatch, useAppSelector } from "@/redux/typed-hooks";
-import { filterByCategory } from "@/redux/features/productsSlice";
-import { useId, useState, useEffect } from "react";
+import { useAppDispatch } from "@/redux/typed-hooks";
+import {
+  filterByCategory,
+  selectCategory,
+} from "@/redux/features/productsSlice";
+import { useId } from "react";
 import type { CategoryInput } from "@/types";
 
 const FilterMaterials = ({ label, hasChecked }: CategoryInput) => {
-  const [selectedFilter, setSelectedFilter] = useState(hasChecked);
   const filterId = useId();
   const dispatch = useAppDispatch();
-  const selectedCategories = useAppSelector(
-    (state) => state.products.selectedCategories
-  );
-
-  const stringCopyOfSelectedCategories = JSON.stringify(selectedCategories);
-
-  useEffect(() => {
-    if (selectedCategories.length === 0) {
-      setSelectedFilter(false);
-    }
-  }, [stringCopyOfSelectedCategories]);
 
   const handleSelectCategory = () => {
-    setSelectedFilter((prevSelect) => !prevSelect);
-    dispatch(filterByCategory({ label, selected: !selectedFilter }));
+    dispatch(selectCategory(label));
+    dispatch(filterByCategory());
   };
 
   return (
@@ -31,7 +22,7 @@ const FilterMaterials = ({ label, hasChecked }: CategoryInput) => {
       <input
         type="checkbox"
         id={filterId}
-        checked={selectedFilter}
+        checked={hasChecked}
         onChange={handleSelectCategory}
         className="focus:ring-0 cursor-pointer"
       />

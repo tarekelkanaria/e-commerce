@@ -2,7 +2,9 @@ import { createSlice } from "@reduxjs/toolkit";
 import { nanoid } from "nanoid";
 import Materials from "@/../data.json";
 import type {
+  CategoryInput,
   InitialProductsState,
+  PriceInput,
   Product,
   RenderedProduct,
   SortProductsAction,
@@ -24,10 +26,30 @@ const featuredProduct: Product = Materials.products.find(
   (product) => product.featured === true
 )!;
 
+const uniqueCategories = new Set<string>();
+
+for (let i = 0; i < initialProducts.length; i++) {
+  uniqueCategories.add(initialProducts[i].category);
+}
+
+const categories: CategoryInput[] = [...uniqueCategories].map((category) => ({
+  label: category,
+  hasChecked: false,
+}));
+
+const prices: PriceInput[] = [
+  { label: "Lower than $20", breakPoint: 19 },
+  { label: "$20 - $100", breakPoint: 99 },
+  { label: "$100 - $200", breakPoint: 199 },
+  { label: "More than $200", breakPoint: 200 },
+];
+
 const initialState: InitialProductsState = {
-  allProducts: initialProducts,
+  renderedProducts: initialProducts,
   featuredProduct,
-  selectedCategories: [],
+  categories,
+  prices,
+  selectedPrice: null,
 };
 
 const productsSlice = createSlice({
@@ -36,69 +58,69 @@ const productsSlice = createSlice({
   reducers: {
     sortProducts: (state, action: SortProductsAction) => {
       if (action.payload === "price") {
-        state.allProducts.sort((a, b) => a.price - b.price);
+        state.renderedProducts.sort((a, b) => a.price - b.price);
       } else {
-        state.allProducts.sort((a, b) => a.name.localeCompare(b.name));
+        state.renderedProducts.sort((a, b) => a.name.localeCompare(b.name));
       }
     },
     toggleSort: (state, action: ToggleSortAction) => {
       if (action.payload.sortType === "price") {
         if (action.payload.hasSorted) {
-          state.allProducts.sort((a, b) => b.price - a.price);
+          state.renderedProducts.sort((a, b) => b.price - a.price);
         } else {
-          state.allProducts.sort((a, b) => a.price - b.price);
+          state.renderedProducts.sort((a, b) => a.price - b.price);
         }
       } else {
         if (action.payload.hasSorted) {
-          state.allProducts.sort((a, b) => b.name.localeCompare(a.name));
+          state.renderedProducts.sort((a, b) => b.name.localeCompare(a.name));
         } else {
-          state.allProducts.sort((a, b) => a.name.localeCompare(b.name));
+          state.renderedProducts.sort((a, b) => a.name.localeCompare(b.name));
         }
       }
     },
-    filterByCategory: (state, action) => {
-      if (action.payload.selected) {
-        state.selectedCategories = [
-          ...state.selectedCategories,
-          action.payload.label,
-        ];
-      } else {
-        state.selectedCategories = state.selectedCategories.filter(
-          (category) => category !== action.payload.label
-        );
-      }
-      if (!state.selectedCategories.length) {
-        state.allProducts = initialProducts;
-      } else {
-        state.allProducts = initialProducts.filter((product) =>
-          state.selectedCategories.includes(product.category)
-        );
-      }
+    selectCategory: (state, action) => {
+      state.categories.forEach((category) => {
+        if (category.label === action.payload) {
+          category.hasChecked = !category.hasChecked;
+        }
+      });
     },
-    filterByPrice: (state, action) => {
-      if (action.payload === 19) {
-        state.allProducts = initialProducts.filter(
-          (product) => product.price <= action.payload
+    filterByCategory: (state) => {
+      const selectedCategories = state.categories
+        .filter((category) => category.hasChecked)
+        .map((selectedCategory) => selectedCategory.label);
+      state.renderedProducts = initialProducts.filter((product) =>
+        selectedCategories.includes(product.category)
+      );
+    },
+    setSelectedPrice: (state, action) => {
+      state.selectedPrice = action.payload;
+    },
+    filterByPrice: (state) => {
+      if (state.selectedPrice === 19) {
+        state.renderedProducts = initialProducts.filter(
+          (product) => product.price <= 19
         );
-      } else if (action.payload === 99) {
-        state.allProducts = initialProducts.filter(
-          (product) => product.price <= action.payload && product.price >= 20
+      } else if (state.selectedPrice === 99) {
+        state.renderedProducts = initialProducts.filter(
+          (product) => product.price <= 99 && product.price >= 20
         );
-      } else if (action.payload === 199) {
-        state.allProducts = initialProducts.filter(
-          (product) => product.price <= action.payload && product.price >= 100
+      } else if (state.selectedPrice === 199) {
+        state.renderedProducts = initialProducts.filter(
+          (product) => product.price <= 199 && product.price >= 100
         );
-      } else if (action.payload === 200) {
-        state.allProducts = initialProducts.filter(
-          (product) => product.price >= action.payload
+      } else if (state.selectedPrice === 200) {
+        state.renderedProducts = initialProducts.filter(
+          (product) => product.price >= 200
         );
       } else {
-        state.allProducts = initialProducts;
+        state.renderedProducts = initialProducts;
       }
     },
     clearFilters: (state) => {
-      state.allProducts = initialProducts;
-      state.selectedCategories = [];
+      state.renderedProducts = initialProducts;
+      state.categories = categories;
+      state.selectedPrice = null;
     },
   },
 });
@@ -106,7 +128,9 @@ const productsSlice = createSlice({
 export const {
   sortProducts,
   toggleSort,
+  selectCategory,
   filterByCategory,
+  setSelectedPrice,
   filterByPrice,
   clearFilters,
 } = productsSlice.actions;

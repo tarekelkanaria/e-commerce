@@ -1,42 +1,21 @@
 "use client";
 
+import { useAppDispatch, useAppSelector } from "@/redux/typed-hooks";
 import Image from "next/image";
-import { useAppDispatch } from "@/redux/typed-hooks";
-import {
-  clearFilters,
-  productsWithoutFeatured,
-} from "@/redux/features/productsSlice";
-import { useState } from "react";
-import type { CategoryInput, FilterProps, PriceInput } from "@/types";
+import { clearFilters } from "@/redux/features/productsSlice";
+import type { FilterProps } from "@/types";
 import FilterMaterials from "../UI/FilterMaterials";
 import FilterPrice from "../UI/FilterPrice";
 import CloseIcon from "@/../public/icons/close.svg";
 
-const uniqueCategories = new Set<string>();
-
-const prices: PriceInput[] = [
-  { label: "Lower than $20", breakPoint: 19 },
-  { label: "$20 - $100", breakPoint: 99 },
-  { label: "$100 - $200", breakPoint: 199 },
-  { label: "More than $200", breakPoint: 200 },
-];
 const Filter = ({ smallScreen, close }: FilterProps) => {
-  const [updatedPrices, setUpdatedPrices] = useState(prices);
+  const prices = useAppSelector((state) => state.products.prices);
+  const categories = useAppSelector((state) => state.products.categories);
   const dispatch = useAppDispatch();
 
-  for (let i = 0; i < productsWithoutFeatured.length; i++) {
-    uniqueCategories.add(productsWithoutFeatured[i].category);
-  }
-
   const handleClearInputs = () => {
-    setUpdatedPrices(prices);
     dispatch(clearFilters());
   };
-
-  const categories: CategoryInput[] = [...uniqueCategories].map((category) => ({
-    label: category,
-    hasChecked: false,
-  }));
 
   return (
     <>
@@ -71,7 +50,7 @@ const Filter = ({ smallScreen, close }: FilterProps) => {
           Price range
         </h3>
         <ul>
-          {updatedPrices.map((price) => (
+          {prices.map((price) => (
             <li key={price.label} className="mb-8">
               <FilterPrice {...price} />
             </li>

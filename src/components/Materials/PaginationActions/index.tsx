@@ -14,7 +14,9 @@ const productsPerDeskPage = 6;
 const productsPerMobPage = 4;
 
 const PaginationActions = () => {
-  const allProducts = useAppSelector((state) => state.products.allProducts);
+  const allProducts = useAppSelector(
+    (state) => state.products.renderedProducts
+  );
   const currentPage = useAppSelector((state) => state.paginate.currentPage);
   const dispatch = useAppDispatch();
 
