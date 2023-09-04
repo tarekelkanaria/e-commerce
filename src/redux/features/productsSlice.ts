@@ -89,9 +89,12 @@ const productsSlice = createSlice({
       const selectedCategories = state.categories
         .filter((category) => category.hasChecked)
         .map((selectedCategory) => selectedCategory.label);
-      state.renderedProducts = initialProducts.filter((product) =>
-        selectedCategories.includes(product.category)
-      );
+      state.renderedProducts =
+        selectedCategories.length > 0
+          ? initialProducts.filter((product) =>
+              selectedCategories.includes(product.category)
+            )
+          : initialProducts;
     },
     setSelectedPrice: (state, action) => {
       state.selectedPrice = action.payload;

@@ -13,6 +13,6 @@
     @apply bg-black text-white text-3xl leading-normal font-medium py-3 px-8 tracking-wide rounded-md;
   }
   .modal {
-    @apply max-w-lg w-full sm:w-[443px] p-1 absolute top-28 sm:right-10 bg-white border-2 rounded-md focus:outline-none shadow-md;
+    @apply max-w-lg w-full sm:w-[443px] max-h-96 overflow-y-auto p-1 absolute top-28 sm:right-10 bg-white border-2 rounded-md focus:outline-none shadow-md;
   }
 }
